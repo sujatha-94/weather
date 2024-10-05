@@ -1,0 +1,33 @@
+/* MiniCard.css */
+.mini-card {
+    background: rgba(0, 0, 0, 0.7); /* White background with slight transparency */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the card */
+    text-align: center; /* Center text */
+    width: 120px; /* Fixed width for the mini card */
+    margin: 2px; /* Margin around each mini card */
+    box-shadow:rgba(255, 254, 254, 0.837); /* Soft shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+  }
+  
+  .mini-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  .mini-card h3 {
+    font-size: 14px; /* Font size for weekday */
+    color: #ffffff; /* Dark text color for the heading */
+    margin: 5px 0; /* Margin around the heading */
+  }
+  
+  .mini-card p {
+    margin: 4px 0; /* Margin for description and temperature */
+    font-size: 12px; /* Font size for description and temperature */
+    color: #fffefe; /* Slightly lighter color for description text */
+  }
+  
+  .mini-card img {
+    width: 40px; /* Fixed width for the weather icon */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

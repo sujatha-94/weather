@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/bg.png'); /* Add your weather-related background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.weather-widget {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px; /* Fixed max width */
+  margin: 80px auto; /* Centered widget */
+  background: rgba(0, 0, 0, 0.7); /* Light black with some transparency */
+  border-radius: 10px;
+  margin-left: 560px;
+  box-shadow: 0 5px 10px rgba(255, 254, 254, 0.837);
+  position: relative;
+}
+
+.weather-widget form {
+  margin-bottom: 15px; /* Space below the form */
+}
+
+.weather-widget input {
+  padding: 10px; /* Padding for input */
+  font-size: 16px; /* Font size for input */
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding in width */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Border color */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.weather-widget input:focus {
+  border-color: #999; /* Change border color on focus */
+}
+
+.loading, .error {
+  font-size: 16px; /* Font size for loading/error messages */
+  color: #ccc; /* Color for loading/error messages */
+}
+
+.weather-info {
+  font-size: 16px; /* Font size for weather info */
+  width: 200px; /* Full width to prevent shifting */
+}
+
+.weather-info p {
+  margin: 8px 0; /* Adjusted margin */
+}
+
+.weather-info img {
+  margin-top: 15px; /* Adjusted margin */
+  width: 80px; /* Image size */
+}
+
+.weekdays-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap */
+  justify-content: center; /* Center cards horizontally */
+  margin-top: 60px; /* Margin for spacing */
+  gap: 55px; /* Gap between cards */
+}
+
+.current-date-time {
+  font-size: 16px; /* Font size for current date/time */
+  color: #fff; /* Text color */
+  margin-bottom: 15px; /* Space below */
+}
+
+.weather-widget-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+  padding: 0 20px; /* Optional padding */
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 1; /* Ensure visibility */
+}
+
+.mini-card {
+  background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding inside the card */
+  text-align: center; /* Center text */
+  width: 120px; /* Fixed width for the mini card */
+  margin: 2px; /* Margin around each mini card */
+  box-shadow: rgba(255, 254, 254, 0.837); /* Soft shadow for depth */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.mini-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
